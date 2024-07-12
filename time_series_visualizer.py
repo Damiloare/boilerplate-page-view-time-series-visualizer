@@ -13,9 +13,9 @@ df = None
 
 def draw_line_plot():
     # Draw line plot
-
-
-
+plt.title('Daily freeCodeCamp Forum Page Views 5/2016-12/2019')
+plt.xlabel('Date')
+plt.ylabel('Page Views')
 
 
     # Save image and return fig (don't change this part)
@@ -25,7 +25,8 @@ def draw_line_plot():
 def draw_bar_plot():
     # Copy and modify data for monthly bar plot
     df_bar = None
-
+plt.xlabel('Years')
+plt.ylabel('Average Page Views')
     # Draw bar plot
 
 
@@ -48,7 +49,8 @@ def draw_box_plot():
 
 
 
-
+plt2.set_xlabel('Month')
+plt2.set_ylabel('Page Views')
     # Save image and return fig (don't change this part)
     fig.savefig('box_plot.png')
     return fig
